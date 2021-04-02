@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="website project deel3 graduaat opleiding programmeren">
+    <meta name="keywords" content="MaartenDp, De Puysseleir, CV, personal website">
+    <meta name="author" content="Maarten De Puysseleir">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/huisstijl.css">
+    <title>formulier - MaartenDP</title>
+
+    <script src="https://kit.fontawesome.com/ed01003756.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!--content container-->
+        <main class="container-fluid">
+            <h1>Registreer</h1>
+            <p>Meld je aan bij MDP exclusive en ontvang van ons elke dag een beetje meer exlusieve spam!</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <div class="form-group">
+                                    <label for="voornaam" id="lblVoornaam">Voornaam</label>
+                                    <input type="text" class="form-control" id="voornaam" placeholder="Uw Voornaam">
+                                </div>
+                                <label for="gebruikersnaam">gebruikersnaam</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="gebruikersnaam" placeholder="u911236">
+                                </div>
+                                <div class="form-group">
+                                    <label for="wachtwoord">Wachtwoord</label>
+                                    <input type="password" class="form-control" id="wachtwoord" placeholder="">
+                                    <small id="wachtwoordHelp" class="form-text text-muted">je wachtwoord moet minstens
+                                        8 tekens
+                                        lang zijn</small>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="form-group">
+                                    <label for="naam">Naam</label>
+                                    <input type="text" class="form-control" id="naam" placeholder="Uw naam">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mailadres</label>
+                                    <input type="email" class="form-control" id="email" placeholder="mail@example.be">
+                                </div>
+                                <div class="form-group">
+                                    <label for="wachtwoord2">Herhaal wachtwoord</label>
+                                    <input type="password" class="form-control" id="wachtwoord2" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="adres">Adres</label>
+                            <input type="text" class="form-control" id="adres" placeholder="Uw adres en huisnummer">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="land">Land</label>
+                                <select id="land" class="form-control">
+                                    <option selected>Kies een land...</option>
+                                    <option>België</option>
+                                    <option>Frankrijk</option>
+                                    <option>Duitsland</option>
+                                    <option>Nederland</option>
+                                    <option>Pakistan</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="provincie">provincie</label>
+                                <select id="provincie" class="form-control">
+                                    <option selected>Kies een provincie...</option>
+                                    <option>Antwerpen</option>
+                                    <option>Henegouwen</option>
+                                    <option>Limburg</option>
+                                    <option>Luik</option>
+                                    <option>Luxemburg</option>
+                                    <option>Namen</option>
+                                    <option>Oost-Vlaanderen</option>
+                                    <option>Vlaaams Brabant</option>
+                                    <option>Waals-Brabant</option>
+                                    <option>West-Vlaanderen</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="postcode">Postcode</label>
+                                <input type="number" id="postcode" class="form-control">
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <div class="col-md-8">
+                                <h3>Hou me op de hoogte</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="nieuwsbrief">
+                                    <label class="form-check-label" for="nieuwsbrief">
+                                        Inschrijven voor onze nieuwsbrief
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="akkoordVoorwaarden">
+                                    <label class="form-check-label" for="akkoordVoorwaarden">
+                                        Ik ga akkoord met de algemene voorwaarden.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Betaling</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="betalingsVoorkeur"
+                                        id="bankingApp" value="banking app" checked>
+                                    <label class="form-check-label" for="bankingApp">
+                                        Banking app
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="betalingsVoorkeur"
+                                        id="overschrijving" value="overschrijving">
+                                    <label class="form-check-label" for="overschrijving">
+                                        Overschrijving
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="betalingsVoorkeur" id="visa"
+                                        value="Visa">
+                                    <label class="form-check-label" for="visa">
+                                        Visa Card
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="betalingsVoorkeur" id="payPal"
+                                        value="PayPal">
+                                    <label class="form-check-label" for="payPal">
+                                        PayPal
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnVerzenden">Verkrijg de
+                                beste Spam ter
+                                wereld.</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-danger" id="alertVak" role="alert">
+                        <h4 class="alert-heading" id="alertTitel">ai ai ai</h4>
+                        <div id="alertBoodschap"></div>
+                    </div>
+                    <div class="alert alert-success" id="succesAlertVak" role="alert">
+                        <h4 class="alert-heading" id="succesAlertTitel">great success</h4>
+                        <div id="succesAlertBoodschap"></div>
+                    </div>
+                    <div class="alert alert-info" id="betalingAlertVak" role="alert">
+                        <h4 class="alert-heading" id="betalingAlertTitel">Betalingswijze</h4>
+                        <div id="betalingAlertBoodschap"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <script>
+            "use strict";
+            //Javascitpt voor validaties op het formulier
+
+            //alert vak verbergen bij laden pagina aangepaste versie van code gevonden op https://www.javascripttutorial.net/javascript-dom/javascript-onload/ 
+            let hideAlerts = () => {
+                document.querySelector('#alertVak').hidden = true;
+                document.querySelector('#betalingAlertVak').hidden = true;
+                document.querySelector('#succesAlertVak').hidden = true;
+            }
+            window.addEventListener('load', hideAlerts);
+
+            //array aanmaken voor opvangen van error boodschappen, wordt globaal gebruikt omdat verschillende functies de array moeten aanspreken en aanvullen
+            let errors = [];
+
+            // contorle of input vak leeg is
+            function checkEmptyField(veld, melding) {
+                if (document.querySelector("#" + veld).value.trim() === "") {
+                    errors.push(melding);
+                    return false;
+                }
+            };
+
+            // controleer of er een keuze is gemaakt in de twee keuze boxen, als keuze gemaakt moet de index van de geslecteerde optie vervangen zijn
+            function checkKeuzelijst(veld, melding) {
+                let optie = document.querySelector("#" + veld).selectedIndex;
+                if (optie === 0) {
+                    errors.push(melding);
+                    return false;
+                }
+            }
+            //controleer samenstelling email adres (aangepaste versie van https://www.w3resource.com/javascript/form/email-validation.php)
+            function ValidateEmail(mail) {
+                //zoeken naar @ symbool en mail adres in gebruiker en domein verdelen op basis van @ symbool
+                //console.log(typeof mail);
+                let heeftAtSymbool = mail.indexOf("@");
+                let mailpartGebruiker, mailpartDomein;
+                if (heeftAtSymbool == -1) {
+                    errors.push("een email adres moet een @ bevatten<br>");
+                }
+                else {
+                    mailpartGebruiker = mail.slice(0, heeftAtSymbool);
+                    mailpartDomein = mail.slice(heeftAtSymbool + 1);
+
+                }
+                //controle van gebruikerdeel
+                //nakijken of minstens 1 teken lang
+                if (mailpartGebruiker.length < 1) {
+                    errors.push("de gebruikersnaam van het email adres moet minstens 1 teken zijn<br>");
+                }
+                //nakijken of niet begint met punt of koppelteken
+                if (mailpartGebruiker.indexOf(".") == 0 || mailpartGebruiker.indexOf("-") == 0) { errors.push("de gebruikersnaam van een email adres mag niet beginnen met een . of - teken<br>") }
+                //nakijken of enkel letters, nummers, underscores punten of koppeltekens bevat
+                let bevatFouteTekens = mailpartGebruiker.search(/[^a-z^A-Z^0-9^.^-^_^-]/);
+
+                if (bevatFouteTekens != -1) {
+                    errors.push("gebruikersnaam van email adres mag enkel letters,cijfers, punten, koppeltekens of underscores bevatten<br>");
+                }
+
+                //controle van domeindeel
+                if (mailpartDomein.length < 3) {
+                    errors.push("de domeinnaam van het email adres moet minstens uit 3 teken bestaan (x.y)<br>");
+                }
+                //nakijken of start met letter of nummer
+                let begintMetLetterOfNummer = mailpartDomein.slice(0,1);
+                console.log(begintMetLetterOfNummer);
+                if (begintMetLetterOfNummer.search(/[a-zA-Z0-9]/)) {
+                    errors.push("de domeinnaam van het email adres moet beginnen met een letter of cijfer (x.y)<br>");
+                }
+                //nakijken of punt aanwezig is voor domein af te scheiden van extensie
+                if (mailpartDomein.indexOf(".") == -1) {
+                    errors.push("domeinnaam moet een . bevatten om domein van extentie te scheiden<br>");
+                }
+                //nakijken of het enkel letters,nummers,punten en koppeltekens bevat
+                bevatFouteTekens = mailpartDomein.search(/[^a-z^A-Z^0-9^.^-^-]/);
+
+                if (bevatFouteTekens != -1) {
+                    errors.push("domeinnaam van email adres mag enkel letters,cijfers, punten, of koppeltekens bevatten<br>");
+                }
+            }
+            //arrow functie voor controle wachtwoord, enkel controleren of gelijk en langer dan 7 tekens, empty wordt gecontroleerd met andere functie
+            let validateWW = (wachtwoord, controleWachtwoord) => {
+                if (wachtwoord != controleWachtwoord) {
+                    errors.push("de wachtwoorden komen niet overeen<br>");
+                    return false;
+                }
+                else if (wachtwoord.length < 7) {
+                    errors.push("het wachtwoord moet minstens 7 tekens zijn<br>");
+                    return false;
+                }
+            }
+            //controle betalingswijze 
+            function validatePayment(veld) {
+                let selected = document.querySelector('input[type=radio][name=betalingsVoorkeur]:checked');
+                //console.log(selected.value);
+                document.querySelector('#betalingAlertBoodschap').innerHTML = "je betalingswijze is " + selected.value + ".";
+            }
+            //controle postcode met arrow functie
+            let checkPC = (veld) => {
+                let postcode = document.querySelector("#" + veld).value;
+                if (postcode === "") {
+                    errors.push('Het veld postcode is vereist<br>');
+                    return false;
+                }
+                else if (postcode < 1000 || postcode > 9999) {
+                    errors.push('Postcode moet een cijfer tussen 1000 en 9999 zijn<br>');
+                    return false;
+                }
+            }
+            //controle algemene voorwaarden
+            function checkAlgemeneVoorwaarden() {
+                const cb = document.querySelector('#akkoordVoorwaarden');
+                if (cb.checked === false) {
+                    errors.push("U moet akkoord gaan met de algemene voorwaarden<br>");
+                }
+
+            }
+
+            //validate form functie om te reageren op de event listener
+            function validateForm(e) {
+                //default behavior uitzetten van submit, anders werkt de hele boel niet
+                e.preventDefault();
+
+                //tekstvelden controleren of ingevuld
+                checkEmptyField("voornaam", "Er is geen voornaam ingevuld<br>");
+                checkEmptyField("naam", "Er is geen achternaam ingevuld<br>");
+                checkEmptyField("gebruikersnaam", "Er is geen gebruikersnaam ingevuld<br>");
+                checkEmptyField("adres", "Er is geen adres ingevuld<br>");
+                checkEmptyField("wachtwoord", "U moet een wachtwoord invullen<br>");
+                checkEmptyField("wachtwoord2", "U moet het wachtwoord 2 keer invullen<br>");
+
+                //keuzelijsten controleren of keuzes gemaakt
+                checkKeuzelijst("land", "U heeft geen land gekozen<br>");
+                checkKeuzelijst("provincie", "U heeft geen provincie gekozen<br>");
+
+                //data inlezen en in variabelen opslaan
+                let voornaam = document.querySelector('#voornaam').value;
+                let achternaam = document.querySelector('#naam').value;
+                let gebruiker = document.querySelector('#gebruikersnaam').value;
+                let adres = document.querySelector('#adres').value;
+                let wachtwoord = document.querySelector('#wachtwoord').value;
+                let controleWachtwoord = document.querySelector('#wachtwoord2').value;
+                let email = document.querySelector('#email').value;
+                //land en provincie zijn indexen, de waarde hiervan kan opgevraagd worden door .value
+                let land = document.querySelector('#land');
+                let provincie = document.querySelector('#provincie');
+                //controle van input voor debug: verwijder comment tokens op onderstaande lijn
+                //console.log(voornaam + achternaam + gebruiker + adres + wachtwoord + controleWachtwoord + email + land.value + provincie.value);
+
+                //email controle uitvoeren
+                ValidateEmail(email);
+
+                //wachtwoord controleren
+                validateWW(wachtwoord, controleWachtwoord);
+
+                //payment methode nakijken
+                validatePayment('betalingsVoorkeur');
+
+                //postcode valideren
+                checkPC('postcode');
+
+                //nakijken of algemene voorwaarden zijn aangevinkt
+                checkAlgemeneVoorwaarden();
+                //verwijder comment tokens hieronder om log van errors te zien te krijgen voor debug
+                //for (let i = 0; i < errors.length; i++) { console.log(errors[i]);}
+
+                //resultaat tonen
+                showAlerts();
+            }
+            //event listener aanmaken om het klikken van de knop te registreren
+            document.querySelector("#btnVerzenden").addEventListener("click", validateForm);
+
+            //arrow function om de alerts te tonen
+            let showAlerts = () => {
+                //reeds ingevulde meldingen verwijderen om proper te beginnen
+                document.querySelector('#alertBoodschap').innerHTML = "";
+                //check for succes or errors
+                if (errors.length === 0) {
+                    //zichtbaar maken succesvakken en betalingswijze
+                    document.querySelector('#betalingAlertVak').hidden = false;
+                    document.querySelector('#succesAlertVak').hidden = false;
+                    //onzichtbaar maken error vak
+                    document.querySelector('#alertVak').hidden = true;
+                }
+                else {
+                    //zichtbaar maken alert vak
+                    document.querySelector('#alertVak').hidden = false;
+                    //onzichtbaar maken succesvakken
+                    document.querySelector('#betalingAlertVak').hidden = true;
+                    document.querySelector('#succesAlertVak').hidden = true;
+
+                    //inhoud van errors array uitlezen en in alert box plaatsen
+                    for (let i = 0; i < errors.length; i++) { document.querySelector('#alertBoodschap').innerHTML += errors[i]; }
+                }
+
+
+
+                //array leegmaken voor volgend keer doorsturen (suggestie van stack overflow:https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript )
+                errors.splice(0, errors.length);
+
+
+            };
+
+
+        </script>
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
